@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Pokémon Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5 contenedor-atm">
+            <!-- Botones lado izquierdo -->
+            <div class="col-3 d-flex align-items-end justify-content-center">
+                <div class="d-flex flex-column w-100">
+                    <!-- N/A -->
+                </div>
+            </div>
+
+            <!-- Pantalla -->
+            <div class="col-6">
+                <div class="pantalla-atm">
+                    <h5>Pokémon Bank</h5>
+                    <h6>Pagar Servicios</h6>
+                    <p>Digite NPE:</p>
+                    <input type="number" class="form-control mb-3" id="NPE" placeholder="NPE" min="0">
+                    <p>Seleccione el servicio a pagar:</p>
+                    <select class="form-control mb-3" id="tipoServicio">
+                        <option value="energia">Energía Eléctrica</option>
+                        <option value="internet">Internet</option>
+                        <option value="telefonia">Telefonía</option>
+                        <option value="agua">Agua Potable</option>
+                    </select>
+                    <p>Digite cantidad a pagar:</p>
+                    <input type="number" class="form-control mb-3" id="cantidadPagar" placeholder="Cantidad" min="0">
+                </div>
+            </div>
+
+            <!-- Botones lado derecho -->
+            <div class="col-3 d-flex align-items-end justify-content-center">
+                <div class="d-flex flex-column w-100">
+                    <a href="#" class="btn btn-secondary mb-2 w-100" onclick="confirmarPago()">Confirmar</a>
+                    <a href="dashboard.html" class="btn btn-secondary w-100">Atrás</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

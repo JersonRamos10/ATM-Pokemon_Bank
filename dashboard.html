@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Pokémon Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5 contenedor-atm">
+            <!-- Botones lado izquierdo -->
+            <div class="col-3 d-flex align-items-end justify-content-center">
+                <div class="d-flex flex-column w-100">
+                    <a href="depositar.html" class="btn btn-secondary mb-2 w-100">Depositar</a>
+                    <a href="retirar.html" class="btn btn-secondary mb-2 w-100">Retirar</a>
+                    <a href="pagar_serv.html" class="btn btn-secondary w-100">Pagar Serv.</a>
+                </div>
+            </div>
+
+            <!-- Pantalla -->
+            <div class="col-6">
+                <div class="pantalla-atm">
+                    <h1>Pokémon Bank</h1>
+                    <h6>Bienvenido, @usuario</h6>
+                    <p>Cuenta, @cuenta</p>
+                    <p>Saldo, @saldo</p>
+                </div>
+            </div>
+
+            <!-- Botones lado derecho -->
+            <div class="col-3 d-flex align-items-end justify-content-center">
+                <div class="d-flex flex-column w-100">
+                    <a href="historial.html" class="btn btn-secondary mb-2 w-100">Historial</a>
+                    <a href="graficos.html" class="btn btn-secondary mb-2 w-100">Gráficos</a>
+                    <a href="login.html" class="btn btn-secondary mb-2 w-100" onclick="cerrarSesion()">Cerrar Ses.</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

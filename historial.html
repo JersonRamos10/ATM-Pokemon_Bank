@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Pokémon Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5 contenedor-atm">
+            <!-- Botones lado izquierdo -->
+            <div class="col-3 d-flex align-items-end justify-content-center">
+                <div class="d-flex flex-column w-100">
+                    <!-- N/A -->
+                </div>
+            </div>
+
+            <!-- Pantalla -->
+            <div class="col-6">
+                <div class="pantalla-atm">
+                    <h1>Pokémon Bank</h1>
+                    <h6>Historial de Transacciones</h6>
+                    <!-- Pa' mientras -->
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Monto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Depósito</td>
+                                    <td>$1,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Retiro</td>
+                                    <td>-$500</td>
+                                </tr>
+                                <tr>
+                                    <td>Internet</td>
+                                    <td>-$150</td>
+                                </tr>
+                                <tr>
+                                    <td>Energía Eléctrica</td>
+                                    <td>-$100</td>
+                                </tr>
+                                <tr>
+                                    <td>Agua Potable</td>
+                                    <td>-$50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones lado derecho -->
+            <div class="col-3 d-flex align-items-end justify-content-center">
+                <div class="d-flex flex-column w-100">
+                    <a href="dashboard.html" class="btn btn-secondary w-100">Atrás</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+/* Body */
+body {
+    display: flex; /* Activa Flexbox para diseño flexible */
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    margin: 0; /* Elimina margen predeterminado */
+    background: url('/images/fondo.jpg') center/cover; /* Imagen de fondo centrada y cubierta */
+}
+
+/* Contenedor principal */
+.contenedor-atm {
+    border: 3px solid #333; /* Borde sólido para el contorno */
+    border-radius: 0; /* Sin bordes redondeados para un efecto pixelado */
+    padding: 20px; /* Espaciado interior */
+    background-color: #fff; /* Fondo blanco */
+    margin-top: 20px; /* Espacio superior para separar del borde de la ventana */
+}
+
+/* Diseño de la pantalla */
+.pantalla-atm {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Orienta los elementos hijos verticalmente */
+    justify-content: center; /* Centra los elementos hijos verticalmente */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    background-color: #000; /* Fondo negro */
+    color: #0F0; /* Texto en verde */
+    border: 4px solid #333; /* Borde simulando pixel art */
+    border-radius: 0; /* Sin bordes redondeados para mantener el estilo pixel art */
+    padding: 10px; /* Espaciado interno */
+    height: 300px; /* Altura fija */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+    font-family: 'Press Start 2P', cursive; /* Fuente de estilo retro */
+    font-size: 10px; /* Tamaño de fuente pequeño para el efecto pixel art */
+    box-shadow: 5px 5px 0 #000; /* Sombra para dar profundidad */
+}
+
+.pantalla-atm canvas {
+    max-width: 90%; /* Ancho máximo del contenedor */
+    height: auto !important; /* Altura automática con prioridad */
+}
+
+/* Botones*/
+.btn-secondary {
+    background-color: #646464; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: #FFF; /* Color de texto blanco */
+    font-family: 'Press Start 2P', cursive; /* Fuente de estilo retro */
+    font-size: 10px; /* Tamaño de fuente pequeño */
+    padding: 10px; /* Espaciado interior */
+    outline: 1px solid #000; /* Contorno para definir mejor el botón */
+    box-shadow: 3px 3px 0 #000; /* Sombra para efecto tridimensional */
+    margin-bottom: 2px; /* Espacio entre botones */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
